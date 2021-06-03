@@ -1,6 +1,6 @@
 {
   "name": "@sveltejs/vite-plugin-svelte",
-  "version": "1.0.0-next.10",
+  "version": "1.0.0-next.11",
   "license": "MIT",
   "author": "dominikg",
   "files": [
@@ -15,7 +15,7 @@
     "build-types": "tsc -p . --emitDeclarationOnly --outDir temp && api-extractor run && rimraf temp"
   },
   "engines": {
-		"node": "^12.20 || ^14.13.1 || >= 16"
+    "node": "^12.20 || ^14.13.1 || >= 16"
   },
   "repository": {
     "type": "git",

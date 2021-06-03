@@ -1,5 +1,13 @@
 # @sveltejs/vite-plugin-svelte
 
+## 1.0.0-next.11
+
+### Patch Changes
+
+- [#44](https://github.com/sveltejs/vite-plugin-svelte/pull/44) [`24ae093`](https://github.com/sveltejs/vite-plugin-svelte/commit/24ae0934301cb50506bf39cdccc07ad3eac546fd) Thanks [@dominikg](https://github.com/dominikg)! - update to esbuild 0.12 and vite 2.3.6
+
+* [#44](https://github.com/sveltejs/vite-plugin-svelte/pull/44) [`24ae093`](https://github.com/sveltejs/vite-plugin-svelte/commit/24ae0934301cb50506bf39cdccc07ad3eac546fd) Thanks [@dominikg](https://github.com/dominikg)! - update engines.node to "^12.20 || ^14.13.1 || >= 16"
+
 ## 1.0.0-next.10
 
 ### Minor Changes
