@@ -5,19 +5,22 @@
 	import initAdd, { add } from 'add';
 	// eslint-disable-next-line node/no-missing-import
 	import initHello, { greet } from 'hello_world';
+	// eslint-disable-next-line node/no-missing-import
+	import type { InitOutput as HelloInitOutput } from 'hello_world';
+
+	const test = (obj: any, name: string) => {
+		if (obj !== undefined) {
+			console.log(name, 'is not undefined!');
+		}
+	};
 
 	onMount(async () => {
-		initHello().then(() => {
+		initHello().then((m: HelloInitOutput) => {
 			console.log('WASM module "hello_world" initialized');
+			test(m, 'WASM Greeter module');
 			greet('World');
 		});
 	});
-
-	const test = (obj) => {
-		if (obj !== undefined) {
-			console.log('It does exist!');
-		}
-	};
 </script>
 
 <h1>Hello world!</h1>
@@ -27,7 +30,7 @@
 	<p>Loading...</p>
 {:then wasm}
 	<p>19 + 23 = {add(19, 23)}</p>
-	<p>{test(wasm)}</p>
+	<p>{test(wasm, 'WASM Adder')}</p>
 {/await}
 
 <style>
