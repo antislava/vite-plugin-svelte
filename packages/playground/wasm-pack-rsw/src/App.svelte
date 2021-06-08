@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import Dependency from 'playground-hmr-test-dependency';
 	import { onMount } from 'svelte';
 	// eslint-disable-next-line node/no-missing-import

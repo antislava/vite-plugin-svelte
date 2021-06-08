@@ -3,8 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "vite build",
     "dev": "vite",
+    "build": "vite build",
+    "rsw:deploy": "rsw && npm run build",
     "start": "vite preview",
     "validate": "svelte-check"
   },
